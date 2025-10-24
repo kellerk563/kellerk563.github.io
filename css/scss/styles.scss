@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 100%;
+    background: #132440;
+}
+
+.site-wrapper {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    .intro {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        h1 {
+            font-size: 3rem;
+            color: #fff;
+        }
+    }
+}
