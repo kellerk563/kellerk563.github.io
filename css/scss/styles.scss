@@ -20,11 +20,33 @@ main {
     .intro {
         display: flex;
         align-items: center;
-        justify-content: center;
         height: 100vh;
         h1 {
             font-size: 3rem;
-            color: #fff;
+            text-align: center;
+            color: #F4F4F4;
+        }
+        h2 {
+            text-align: center;
+            color: #F4F4F4;
+            margin: 1rem 0;
+        }
+    }
+    .project-list {
+        width: max-content;
+        max-width: 150px;
+        margin: 0 auto;
+        // list-style-position: inside;
+        padding-left: 15px;
+        color: #F4F4F4;
+        li {
+            a {
+                text-decoration: none;
+                color: #F4F4F4;
+                &:is(:hover, :focus) {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
