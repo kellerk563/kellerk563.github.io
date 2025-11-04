@@ -70,4 +70,23 @@ main .project-list li a {
 }
 main .project-list li a:is(:hover, :focus) {
   text-decoration: underline;
+}
+
+body.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Geist Mono", monospace;
+  height: 100vh;
+  background: #1e1e1e;
+  color: #F4F4F4;
+}
+body.error-page h1 {
+  font-size: 15rem;
+  text-align: center;
+  color: #F4F4F4;
+}
+body.error-page a {
+  text-align: center;
+  color: #F4F4F4;
 }/*# sourceMappingURL=styles.css.map */
