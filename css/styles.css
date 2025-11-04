@@ -16,6 +16,23 @@ body {
   width: 100%;
 }
 
+.portfolio-link {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-decoration: none;
+  color: #F4F4F4;
+  font-size: 1rem;
+  border: 2px solid #F4F4F4;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+.portfolio-link:is(:hover, :focus) {
+  background-color: #F4F4F4;
+  color: #132440;
+}
+
 main .intro {
   display: flex;
   align-items: center;
@@ -34,10 +51,18 @@ main .intro h2 {
 main .project-list {
   width: -moz-max-content;
   width: max-content;
-  max-width: 150px;
   margin: 0 auto;
   padding-left: 15px;
   color: #F4F4F4;
+}
+@media (min-width: 768px) {
+  main .project-list {
+    -moz-column-count: 3;
+         column-count: 3;
+  }
+}
+main .project-list li {
+  padding-bottom: 5px;
 }
 main .project-list li a {
   text-decoration: none;
