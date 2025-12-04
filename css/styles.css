@@ -16,10 +16,13 @@ body {
   width: 100%;
 }
 
+.header-link {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
 .portfolio-link {
-  position: absolute;
-  top: 20px;
-  right: 20px;
   text-decoration: none;
   color: #F4F4F4;
   font-size: 1rem;
@@ -36,7 +39,11 @@ body {
 main .intro {
   display: flex;
   align-items: center;
-  height: 100vh;
+}
+@media (min-width: 480px) {
+  main .intro {
+    height: 100vh;
+  }
 }
 main .intro h1 {
   font-size: 3rem;
@@ -55,6 +62,12 @@ main .project-list {
   padding-left: 15px;
   color: #F4F4F4;
 }
+@media (min-width: 480px) {
+  main .project-list {
+    -moz-column-count: 2;
+         column-count: 2;
+  }
+}
 @media (min-width: 768px) {
   main .project-list {
     -moz-column-count: 3;
@@ -62,7 +75,7 @@ main .project-list {
   }
 }
 main .project-list li {
-  padding-bottom: 5px;
+  padding: 0 10px 5px 0;
 }
 main .project-list li a {
   text-decoration: none;
@@ -82,9 +95,14 @@ body.error-page {
   color: #F4F4F4;
 }
 body.error-page h1 {
-  font-size: 15rem;
+  font-size: 10rem;
   text-align: center;
   color: #F4F4F4;
+}
+@media (min-width: 768px) {
+  body.error-page h1 {
+    font-size: 15rem;
+  }
 }
 body.error-page a {
   text-align: center;
