@@ -40,11 +40,6 @@ main .intro {
   display: flex;
   align-items: center;
 }
-@media (min-width: 480px) {
-  main .intro {
-    height: 100vh;
-  }
-}
 main .intro h1 {
   font-size: 3rem;
   text-align: center;
@@ -53,12 +48,13 @@ main .intro h1 {
 main .intro h2 {
   text-align: center;
   color: #F4F4F4;
-  margin: 1rem 0;
+  margin: 1rem 0 2rem;
 }
 main .project-list {
   width: -moz-max-content;
   width: max-content;
-  margin: 0 auto;
+  margin: 0 auto 20px;
+  list-style-position: inside;
   padding-left: 15px;
   color: #F4F4F4;
 }
